@@ -1,0 +1,74 @@
+.toolbar {
+    width: 100%;
+    padding: 2.4rem 0;
+    border-bottom: 1px solid var(--grey-dark);
+}
+
+.toolbar__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+        "search search"
+        "selection actions";
+    gap: 1.6rem;
+    width: min(var(--container-width), calc(100% - 3.2rem));
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "selection search actions";
+    }
+}
+
+.toolbar__selection {
+    grid-area: selection;
+}
+
+.toolbar__selection label {
+    margin-left: .8rem;
+}
+
+.toolbar__search {
+    grid-area: search;
+    text-align: center;
+}
+
+.toolbar__searchInput {
+    width: 100%;
+    background: var(--grey);
+    border: 1px solid var(--grey-dark);
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+    font-size: 100%;
+}
+
+.toolbar__actions {
+    grid-area: actions;
+    text-align: right;
+}
+
+.toolbar__actions button {
+    background: none;
+    border: none;
+    opacity: .64;
+}
+
+.toolbar__actions button:disabled {
+    opacity: .24;
+}
+
+.toolbar__actions button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.toolbar__actions button:not(:last-child) {
+    margin-right: .8rem;
+}
+
+.toolbar__actions img {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+}

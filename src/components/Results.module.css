@@ -1,0 +1,23 @@
+.results {
+    overflow: auto;
+}
+
+.results__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    width: min(var(--container-width), calc(100% - 3.2rem));
+    margin: 0 auto;
+    padding: 2.4rem 0;
+
+    @media screen and (min-width: 480px) {
+        grid-template-columns: repeat(auto-fill, minmax(var(--user-card-width), 1fr));
+    }
+}
+
+.results__empty {
+    grid-column: 1/-1;
+    margin-top: 10rem;
+    text-align: center;
+    opacity: .64;
+}

@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.4rem;
+    background: var(--grey-dark);
+}
+
+.header__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    gap: 1.6rem;
+    width: min(var(--container-width), calc(100% - 3.2rem));
+}
+
+.header__title {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.header__checkbox {
+    text-align: right;
+}
+
+.header__checkbox label {
+    margin-right: 1.6rem;
+}
