@@ -20,6 +20,7 @@ function UserCard(props: {
                 <>
                     <input 
                         type="checkbox" 
+                        data-testid="userCheckbox"
                         className={styles.userCard__checkbox} 
                         onChange={handleChange}
                         checked={props.selectedUsers.includes(props.id)}

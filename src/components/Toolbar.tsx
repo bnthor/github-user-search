@@ -55,6 +55,7 @@ function Toolbar(props:{
             }
 
             const users = await response.json();
+
             props.setResults(users.items);
         } catch (error) {
             console.error(error);
@@ -67,7 +68,7 @@ function Toolbar(props:{
                 <div className={styles.toolbar__selection}>
                     {props.editMode === true &&
                         <>
-                            <input type="checkbox" id="selection" ref={selectionRef} onChange={handleSelection} />
+                            <input type="checkbox" id="selection" ref={selectionRef} onChange={handleSelection} data-testid="allUsersCheckbox" />
                             <label htmlFor="selection">{props.selectedUsers.length} elements selected</label>
                         </>
                     }

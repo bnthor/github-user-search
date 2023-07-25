@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Hello there 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I created this repo to take the [frontend technical test](https://github.com/fulll/hiring/blob/master/Frontend/github-user-search-intermediaire-senior.md)
+
+First part of the test (FizzBuzz) can be seen [on codeSandbox](https://codesandbox.io/s/fizzbuzz-benjamin-rethore-45hy6v?file=/src/index.ts).
+
+I also had fun making a CSS FizzBuzz, also [on codeSandbox](https://codesandbox.io/s/css-fizzbuzz-benjamin-rethore-c2wmd8?file=/styles.css).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start`
+- `npm test`
+- `npm run build`
+- `npm run eject`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What have been done,
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I tried to stick to the brief :
 
-### `npm test`
+- I wrote this little app with create-react-app, without adding dependencies
+- It is responsive
+- Hitting gitHub's API with fetch when typing in the search form (debounced to avoid too many requests)
+- When rate is exceeded, I'm only logging an error in the console.
+- Empty state (no results) is displayed when form is empty & when there's no results
+- Added a checkbox that selects/unselects all results
+- Added the duplicate/delete selection actions
+- Added an edit-mode toggle in the header, which shows the checkboxes/actions when checked
+- Created a few unit tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+From a design perspective, I didn't stick completely to the mockups, there was an opportunity to shorten the toolbar.

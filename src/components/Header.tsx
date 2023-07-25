@@ -16,7 +16,7 @@ function Header(props: {
         <h1 className={styles.header__title}>Github search</h1>
         <div className={styles.header__checkbox}>
           <label htmlFor="editMode">Edit</label>
-          <input type="checkbox" id="editMode" checked={props.editMode === true } onChange={handleEditModeChange} />
+          <input type="checkbox" id="editMode" data-testid="editModeCheckbox" checked={props.editMode === true } onChange={handleEditModeChange} />
         </div>
       </div>
     </header>
